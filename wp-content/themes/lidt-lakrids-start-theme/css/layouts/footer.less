@@ -1,0 +1,46 @@
+@import "../import/variables";
+@import "../import/functions";
+
+footer{
+  .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    .footer-column{
+      display: flex;
+      flex-direction: column;
+      span{
+        font-family: @title-font;
+        font-weight: 600;
+        color: @black-color;
+        font-size: 30px;
+        text-transform: uppercase;
+      }
+      ul {
+        li {
+          list-style-type: none;
+          font-size: 22px;
+          color: @black-color;
+          font-weight: 600;
+          text-transform: uppercase;
+          a {
+            text-decoration: none;
+            color: @black-color;
+          }
+        }
+      }
+    }
+  }
+  .footer-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 75px;
+    p{
+      font-size: 22px;
+      color: @black-color;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+  }
+}

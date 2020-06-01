@@ -1,0 +1,103 @@
+section.standard-banner{
+  height: 500px;
+  margin: 0 0 75px 0;
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    max-height: 500px;
+    z-index: -1;
+  }
+  div.container {
+    height: 100%;
+    max-width: 90%;
+    div.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+    div.title-col{
+        align-self: center;
+        flex-basis: 33.33%;
+        text-align: center;
+      span.title{
+        color: @white-color;
+        font-size: 48px;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+    }
+    div.txt-col{
+      align-self: center;
+      flex-basis: 33.33%;
+      span.subtitle{
+        color: @white-color;
+        font-size: 32px;
+        font-weight: 600;
+        border-bottom: 3px solid @white-color;
+        text-transform: uppercase;
+      }
+      p {
+        color: @white-color;
+        font-size: 22px;
+        margin-top: 10px;
+      }
+    }
+    }
+  }
+}
+section.swiper-banner{
+  height: 500px;
+  overflow: hidden;
+  margin: 0 0 75px 0;
+  .swiper-navigation {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  .swiper-slide {
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      max-height: 500px;
+    }
+    div.title-col{
+      position: absolute;
+      bottom: 0;
+      display: flex;
+      justify-content: flex-start;
+      span.title {
+        color: @white-color;
+        font-size: 48px;
+        font-weight: 600;
+        text-transform: uppercase;
+        z-index: 1;
+        opacity: 0.8;
+      }
+    }
+  }
+    .swiper-pagination{
+      display: flex;
+      justify-content: flex-end;
+      span.swiper-pagination-bullet{
+        background: transparent;
+        border: 2px solid @white-color;
+        width: 14px;
+        height: 14px;
+        opacity: 0.8;
+        transition: border, background .2s ease-out;
+        &.swiper-pagination-bullet-active{
+          height: 14px;
+          width: 14px;
+          background: @white-color;
+        }
+        &:hover:not(.swiper-pagination-bullet-active){
+          height: 14px;
+          width: 14px;
+          background: @white-color;
+        }
+      }
+    }
+  }
+}

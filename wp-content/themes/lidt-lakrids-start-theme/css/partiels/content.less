@@ -1,0 +1,49 @@
+section.content{
+  margin: 0 0 75px 0;
+  div.columns{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+      div.contents{
+        margin: 0 25px;
+        width: 50%;
+      }
+    &.box{
+      box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+      padding: 15px;
+    }
+  }
+  div.title-col{
+    &.middle {
+      text-align: center;
+    }
+    span.title{
+      font-size: 28px;
+      font-weight: 600;
+      color: @black-color;
+    }
+  }
+  div.txt-col{
+    &.middle {
+      text-align: center;
+    }
+    span.txt{
+      font-size: 18px;
+      color: @black-color;
+    }
+  }
+  a.btn {
+
+  }
+  div.img-col{
+    height: 100%;
+    width: 100%;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+
+    }
+  }
+
+}
