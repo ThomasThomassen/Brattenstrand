@@ -43,7 +43,7 @@ $events = tribe_get_events( [ 'posts_per_page' => 3 ] );
         </div>
     </div>
     <div class="related-title">
-        <h3>Lignende arrangementer</h3>
+        <h3>Kommende arrangementer</h3>
     </div>
     <div class="tribe-events-calendar-list">
         <?php

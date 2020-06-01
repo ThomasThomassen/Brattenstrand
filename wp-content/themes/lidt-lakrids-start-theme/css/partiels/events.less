@@ -32,7 +32,7 @@ div.tribe-common {
                 height: 100%;
                 transition: background-color .2s ease-in-out;
                 min-width: 125px;
-                font-size: 22px;
+                font-size: @subtitle;
                 font-weight: 600;
                 line-height: 1;
                   &:hover{
@@ -123,7 +123,7 @@ div.tribe-events-calendar-list {
             min-height: 125px;
             p{
               font-family: @text-font;
-              font-size: 18px;
+              font-size: @paragraph;
             }
 
           }
@@ -132,11 +132,12 @@ div.tribe-events-calendar-list {
             flex-direction: row;
             justify-content: space-between;
             margin-bottom: 25px;
-            time{
+            time {
               text-align: center;
-              font-size: 18px;
+              font-size: @paragraph;
               font-weight: 600;
             }
+
             a.btn{
               padding: 15px 25px;
               color: @white-color;
