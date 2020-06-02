@@ -5,6 +5,7 @@ $txt = get_field('txt');
 $addbtn = get_field('add-btn');
 $btn = get_field('btn');
 $btnstyle = get_field('btn-style');
+$btnpos = get_field('btn-pos');
 $img = get_field('img');
 ?>
 
@@ -39,8 +40,10 @@ $img = get_field('img');
         }
         if ($addbtn === true) {
             ?>
-            <a href="<?= $btn['url'] ?: '#'; ?>"
-               class="btn <?= $btnstyle ?>"><?= $btn['title'] ?: 'Din knap vises her'; ?></a>
+            <div class="btns <?= $btnpos ?>">
+                <a href="<?= $btn['url'] ?: '#'; ?>"
+                   class="btn <?= $btnstyle ?>"><?= $btn['title'] ?: 'Din knap vises her'; ?></a>
+            </div>
             <?
         }
         if ($img) {

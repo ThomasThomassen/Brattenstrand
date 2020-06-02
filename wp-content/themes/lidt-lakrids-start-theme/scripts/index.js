@@ -1,6 +1,7 @@
 ﻿"use strict";
 
 window.addEventListener("load", bgcolor);
+// window.addEventListener("load", emptyEvents);
 
 var nav = document.getElementById('fixed-nav');
 var banner = document.getElementsByClassName('banner');
@@ -9,20 +10,17 @@ function bgcolor() {
     if(banner.length === 0){
         nav.classList.add('green');
     }
+    if(nav.classList.contains('green')){
+        $('section:first-of-type').addClass('first');
+    }
 }
-
-
-// window.addEventListener("load", createNav);
 //
-// function createNav () {
-//     var nav = document.getElementsByClassName('nav-title');
-//     var section = document.getElementById('sectionNav');
-//     if(nav.length > 0){
-//         section.insertAdjacentHTML( 'afterbegin', '<nav id="asideNav">\n' +
-//             '<ul id="navigation">\n' +
-//             '\n' +
-//             '</ul>\n' +
-//             '</nav>' );
+// function emptyEvents(){
+//     var events = document.getElementsByClassName('tribe-events-calendar-list');
+//     var content = events[0];
+//     var children = content.childNodes.length;
+//     if(children <= 1){
+//         alert('der er desværre ingen arrangementer!');
 //     }
 // }
 

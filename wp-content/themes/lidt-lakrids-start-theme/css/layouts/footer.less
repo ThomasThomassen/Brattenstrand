@@ -2,11 +2,14 @@
 @import "../import/functions";
 
 footer{
-  .container{
+  box-shadow: 0px 0px 50px rgba(0,0,0, 0.32);
+  .footer-container{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    padding-top: 80px;
     .footer-column{
+      text-align: center;
       display: flex;
       flex-direction: column;
       span{
@@ -17,7 +20,9 @@ footer{
         text-transform: uppercase;
       }
       ul {
+        margin-top: 25px;
         li {
+          line-height: 1.8;
           list-style-type: none;
           font-size: @subtitle;
           color: @black-color;
@@ -26,6 +31,10 @@ footer{
           a {
             text-decoration: none;
             color: @black-color;
+            transition: color .2s ease-in-out;
+            &:hover{
+              color: @green-color;
+            }
           }
         }
       }
@@ -36,6 +45,7 @@ footer{
     flex-direction: row;
     justify-content: center;
     margin-top: 75px;
+    padding-bottom: 50px;
     p{
       font-size: @subtitle;
       color: @black-color;

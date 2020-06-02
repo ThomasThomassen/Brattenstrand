@@ -28,8 +28,8 @@ jQuery(document).ready(function () {
                 .replace(/-+$/, '') // Trim - from end of text
         }
 
-
-        $('main > .aside, #asideNav').wrapAll('<section class="content" id="sectionNav"><div class="container"></div></section>');
+        $('main > .aside').wrapAll('<aside class="articles"></aside>');
+        $('main > .articles, #asideNav').wrapAll('<section class="content" id="sectionNav"><div class="container"></div></section>');
         $('li:first-of-type').addClass('active');
 
 
@@ -41,6 +41,10 @@ jQuery(document).ready(function () {
             navPoints[e.id] = e.offsetTop;
         });
     }
+
+    var refresh = 10;
+    var scrollTimer = null;
+
     window.onscroll = function () {
         var scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
         for (i in navPoints) {
@@ -58,10 +62,7 @@ jQuery(document).ready(function () {
     }
 });
 
-var refresh = 10;
-var scrollTimer = null;
 function handleScroll() {
-    scrollTimer = null;
 
     var scrollHeight = $(document).scrollTop()
 

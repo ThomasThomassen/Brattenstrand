@@ -1,9 +1,22 @@
+section#sectionNav{
+  div.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    nav#asideNav{
+      flex-basis: 20%;
+    }
+    aside.articles{
+      flex-basis: 75%;
+    }
+  }
+}
+
 article.aside {
-  float: right;
-  margin: 0 auto;
-  width: 75%;
   span.nav-title{
     opacity: 0;
+    padding-top: 150px;
+    margin-top: -150px;
     position: absolute;
   }
   div.contents{
@@ -18,21 +31,15 @@ article.aside:first-of-type{
 }
 
 #asideNav {
-  min-height: 100px;
-  float: left;
-  width: 20%;
-
   ul {
     padding: 0;
-    float: left;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid @green-color;
     list-style: none;
-    box-sizing: border-box;
 
     li {
       position: relative;
-      float: left;
-      margin: 1px 0;
       width: 100%;
       transition: background-color .2s ease-in-out;
 
@@ -65,10 +72,8 @@ article.aside:first-of-type{
 }
 
 .subNavigationPosition {
-  position: fixed;
-  top: 0px;
-  margin-top: 150px;
-  width: calc(~'80% * 0.2') !important;
+  position: sticky;
+  top: 150px;
 }
 
 .acf-block-preview{

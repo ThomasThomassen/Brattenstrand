@@ -9,13 +9,13 @@ $adress = get_field('adress', 'option');
 </main>
 
 <footer>
-    <div class="container">
+    <div class="footer-container">
         <div class="footer-column">
             <span>Kontakt</span>
             <ul>
-                <li><?= $email ?></li>
-                <li><?= $tlf ?></li>
-                <li><?= $adress ?></li>
+                <li><a href="mailto:<?= $email ?>"><?= $email ?></a></li>
+                <li><a href="tel:<?= $tlf ?>"><?= $tlf ?></a></li>
+                <li><a href="http://maps.google.com/?q=<?=$adress?>"><?= $adress ?></a></li>
             </ul>
 
         </div>

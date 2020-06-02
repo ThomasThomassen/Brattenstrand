@@ -126,7 +126,7 @@ header{
           }
           &.current_page_item{
             a {
-              color: @black-color;
+              border-bottom: 5px solid @white-color;
             }
           }
           a{
@@ -136,6 +136,12 @@ header{
             text-transform: uppercase;
             text-decoration: none;
             color: @white-color;
+            cursor: pointer;
+            border-bottom: 0 solid @white-color;
+            transition: border-bottom-width .1s linear;
+            &:hover {
+              border-bottom: 5px solid @white-color;
+            }
           }
         }
       }

@@ -79,12 +79,13 @@ add_action('init', 'sponsors_post_types');
 
 function renderSponsors($sponsor) {
     /** @var WP_Post $sponsor */
-    $title = get_field('title', $sponsor->ID);
+    $title = get_the_title($sponsor->ID);
     $image = get_field('image', $sponsor->ID);
     $address = get_field('address', $sponsor->ID);
-    $mail = get_field('mail', $sponsor->ID);
     $description = get_field('description', $sponsor->ID);
-    include __DIR__ . "/sponsors.php";
+    $website = get_field('website', $sponsor->ID);
+
+    include __DIR__ . "/template/sponsors.php";
 }
 
 function getSponsors($args = []) {

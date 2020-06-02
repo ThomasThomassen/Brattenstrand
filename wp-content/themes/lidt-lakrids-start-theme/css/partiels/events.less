@@ -1,4 +1,5 @@
 div.tribe-common {
+  margin-top: 100px;
   div.tribe-common-l-container {
     header.tribe-events-header {
       flex-direction: column;
@@ -103,6 +104,11 @@ div.tribe-events-calendar-list {
         div.tribe-events-calendar-list__event-featured-image-wrapper {
           width: 100%;
           padding: 0;
+          a{
+            img{
+              object-fit: cover;
+            }
+          }
         }
 
         div.tribe-events-calendar-list__event-details {
@@ -115,7 +121,16 @@ div.tribe-events-calendar-list {
               font-family: @title-font;
               color: @black-color;
               font-weight: 600;
+              text-transform: uppercase;
               margin-top: 16px;
+              white-space: nowrap;
+              a{
+                transition: color .2s ease-in-out;
+                &:hover{
+                  border: none;
+                  color: @green-color;
+                }
+              }
             }
           }
 
@@ -133,9 +148,10 @@ div.tribe-events-calendar-list {
             justify-content: space-between;
             margin-bottom: 25px;
             time {
+              text-transform: uppercase;
               text-align: center;
               font-size: @paragraph;
-              font-weight: 600;
+              font-family: @text-font;
             }
 
             a.btn{

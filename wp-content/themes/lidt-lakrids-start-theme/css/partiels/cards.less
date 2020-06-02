@@ -1,77 +1,104 @@
-section.cards{
-  display: flex;
-  justify-content: center;
+section.cards {
   margin: 0 0 75px 0;
-        div.flipper-container{
+
+  div.container {
+    display: flex;
+    justify-content: space-between;
+
+    div.flipper-container {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      perspective: 1000px;
+      width: 32%;
+      height: auto;
+
+      &:hover {
+        div.flipper {
+          transform: rotateY(180deg);
+        }
+      }
+
+      div.flipper {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+
+        div.flipper-front {
           display: flex;
           justify-content: center;
-          flex-direction: row;
-          perspective: 1000px;
-          width: 27.5%;
-          &:hover {
-            div.flipper {
-              transform: rotateY(180deg);
+          backface-visibility: hidden;
+          z-index: 1;
+
+          img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+          }
+
+          span.title {
+            color: @white-color;
+            font-size: @small-title;
+            font-weight: 600;
+            text-transform: uppercase;
+            position: absolute;
+            align-self: center;
+            backface-visibility: hidden;
+            padding: 0 20%;
+          }
+        }
+
+        div.flipper-back {
+          display: flex;
+          position: absolute;
+          flex-direction: column;
+          justify-content: space-evenly;
+          top: 0;
+          height: 100%;
+          width: 100%;
+          transform: rotateY(180deg);
+          z-index: 2;
+
+          img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            position: absolute;
+            z-index: -1;
+            filter: blur(8px);
+            -webkit-filter: blur(8px);
+          }
+
+          span.subtitle {
+            color: @white-color;
+            font-size: @subtitle;
+            font-weight: 600;
+            text-transform: uppercase;
+            align-self: center;
+            margin: 20px;
+          }
+
+          span.shortdesc {
+            font-family: @text-font;
+            color: @white-color;
+            font-size: @paragraph;
+            text-transform: uppercase;
+            align-self: center;
+            margin: 20px;
+          }
+
+          div.btns {
+            justify-content: center;
+
+            a.btn {
+              margin-top: unset;
             }
           }
-          div.flipper{
-            position: relative;
-            width: 100%;
-            height: 100%;
-            text-align: center;
-            transition: transform 0.8s;
-            transform-style: preserve-3d;
-            div.flipper-front{
-              display: flex;
-              justify-content: center;
-              backface-visibility: hidden;
-              img {
-                height: 400px;
-                width: 100%;
-                object-fit: cover;
-              }
-              span.title{
-                color: @white-color;
-                font-size: @subtitle;
-                font-weight: 600;
-                text-transform: uppercase;
-                position: absolute;
-                align-self: center;
-                backface-visibility: hidden;
-              }
-            }
-            div.flipper-back{
-              display: flex;
-              position: absolute;
-              flex-direction: column;
-              justify-content: space-evenly;
-              top: 0;
-              height: 100%;
-              width: 100%;
-              backface-visibility: hidden;
-              transform: rotateY(180deg);
-              background-color: @green-color;
-              span.subtitle{
-                color: @white-color;
-                font-size: @paragraph;
-                font-weight: 600;
-                text-transform: uppercase;
-                align-self: center;
-                margin: 20px;
-              }
-              span.shortdesc{
-                color: @white-color;
-                font-size: 14px;
-                font-weight: 600;
-                text-transform: uppercase;
-                align-self: center;
-                margin: 20px;
-              }
-              a.btn {
-                margin-top: unset;
-                width: max-content;
-                align-self: center;
-              }
-            }
         }
+      }
     }
   }
+}
