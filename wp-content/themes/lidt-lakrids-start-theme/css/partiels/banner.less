@@ -1,7 +1,10 @@
 section.standard-banner, .event-banner{
-  height: 500px;
   margin: 0 0 75px 0;
   position: relative;
+  @media @screen-phablet{
+    margin: 0 0 25px 0;
+
+  }
   div.overlay {
     z-index: -1;
     position: absolute;
@@ -9,23 +12,29 @@ section.standard-banner, .event-banner{
     top: 0;
     background-color: rgba(0, 0, 0, .22);
     width: 100%;
-    height: 100%;
+    height: calc(~'100% - 4px');
   }
   img {
-    height: 100%;
     width: 100%;
     object-fit: cover;
-    position: absolute;
+    position: relative;
     max-height: 500px;
     z-index: -2;
   }
   div.container {
     height: 100%;
+    position: absolute;
+    top: 0;
     div.content{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     height: 100%;
+      @media @screen-tablet{
+        flex-direction: column;
+        justify-content: space-evenly;
+        text-align: center;
+      }
     div.title-col{
         align-self: center;
         flex-basis: 33.33%;
@@ -33,6 +42,9 @@ section.standard-banner, .event-banner{
       div.btns{
         a.btn{
           margin-top: 45px;
+          @media @screen-tablet{
+            margin-top: 15px;
+          }
         }
       }
       span.title{
@@ -40,11 +52,17 @@ section.standard-banner, .event-banner{
         font-size: @large-title;
         font-weight: 600;
         text-transform: uppercase;
+        @media @screen-laptop{
+          font-size: @large-title - 1rem;
+        }
       }
     }
     div.txt-col{
       align-self: center;
       flex-basis: 33.33%;
+      @media @screen-laptop{
+        flex-basis: 50%;
+      }
       span.subtitle{
         color: @white-color;
         font-size: @medium-title;
@@ -58,14 +76,27 @@ section.standard-banner, .event-banner{
         font-size: @paragraph;
         margin-top: 10px;
       }
+      div.btns{
+        @media @screen-tablet{
+          justify-content: center;
+          a.btn {
+            @media @screen-tablet{
+              margin-top: 15px;
+            }
+          }
+        }
+      }
     }
     }
   }
 }
 section.swiper-banner{
-  height: 500px;
   overflow: hidden;
   margin: 0 0 75px 0;
+  @media @screen-phablet{
+    margin: 0 0 25px 0;
+    height: 200px;
+  }
   .swiper-navigation {
     width: 100%;
     height: 100%;
@@ -82,6 +113,10 @@ section.swiper-banner{
       bottom: 0;
       display: flex;
       justify-content: flex-start;
+      @media @screen-phablet{
+        top: 75px;
+        width: 100%;
+      }
       span.title {
         color: @white-color;
         font-size: @large-title;
@@ -89,6 +124,14 @@ section.swiper-banner{
         text-transform: uppercase;
         z-index: 1;
         opacity: 0.8;
+        @media @screen-laptop{
+          font-size: @large-title - 1rem;
+        }
+        @media @screen-phablet{
+          font-size: @large-title - 2rem;
+          width: 100%;
+          text-align: center;
+        }
       }
     }
   }

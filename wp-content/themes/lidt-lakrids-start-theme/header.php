@@ -17,14 +17,23 @@
 </head>
 <body>
 <header>
+    <input type="checkbox" id="toggle-menu">
+    <div class="container">
         <div id="top-nav">
             <a href="/" class="logo"><?= file_get_contents(get_template_directory() . "/images/brattenlogo.svg"); ?></a>
-            <a href="/" class="logo-fixed"><?= file_get_contents(get_template_directory() . "/images/brattenlogo_short.svg"); ?></a>
-    <?php wp_nav_menu(array('theme_location' => 'primary', 'container' => 'nav', 'menu_class' => '')); ?>
+            <a href="/"
+               class="logo-fixed"><?= file_get_contents(get_template_directory() . "/images/brattenlogo_short.svg"); ?></a>
+            <?php wp_nav_menu(array('theme_location' => 'primary', 'container' => 'nav', 'menu_class' => '')); ?>
         </div>
         <div id="fixed-nav">
             <?php wp_nav_menu(array('theme_location' => 'secondary', 'container' => 'nav', 'menu_class' => '')); ?>
         </div>
+        <label for="toggle-menu" id="burger">
+            <i></i>
+            <i></i>
+            <i></i>
+        </label>
+    </div>
 </header>
 
 <main>

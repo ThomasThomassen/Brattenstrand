@@ -37,10 +37,14 @@ body:not(.wp-admin), .acf-block-preview {
   &.right{
     justify-content: flex-end;
   }
+  @media @screen-phablet{
+    justify-content: center;
+  }
 }
 
 .btn {
   font-family: @title-font;
+  white-space: nowrap;
   display: inline-block;
   padding: 15px 25px;
   margin-top: 50px;
@@ -94,6 +98,15 @@ body:not(.wp-admin), .acf-block-preview {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+.txt-to-img{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.margrethe{
+  display: flex;
+  justify-content: center;
 }
 
 

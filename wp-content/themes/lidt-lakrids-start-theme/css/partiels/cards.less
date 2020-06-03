@@ -4,6 +4,9 @@ section.cards {
   div.container {
     display: flex;
     justify-content: space-between;
+    @media @screen-tablet{
+      flex-direction: column;
+    }
 
     div.flipper-container {
       display: flex;
@@ -12,6 +15,16 @@ section.cards {
       perspective: 1000px;
       width: 32%;
       height: auto;
+      @media @screen-tablet{
+        width: 64%;
+        margin: 15px auto;
+      }
+      @media @screen-mobile{
+        width: 85%;
+      }
+      @media (max-width: 360px){
+        width: 98%;
+      }
 
       &:hover {
         div.flipper {
@@ -47,7 +60,14 @@ section.cards {
             position: absolute;
             align-self: center;
             backface-visibility: hidden;
-            padding: 0 20%;
+            width: 100%;
+            overflow: hidden;
+            @media @screen-laptop{
+              font-size: @small-title - 0.2rem;
+            }
+            @media @screen-tablet{
+              font-size: @small-title;
+            }
           }
         }
 
@@ -79,6 +99,12 @@ section.cards {
             text-transform: uppercase;
             align-self: center;
             margin: 20px;
+            @media @screen-laptop{
+              margin: 0;
+            }
+            @media @screen-tablet{
+              margin: 20px
+            }
           }
 
           span.shortdesc {
@@ -88,6 +114,14 @@ section.cards {
             text-transform: uppercase;
             align-self: center;
             margin: 20px;
+            @media @screen-laptop{
+              margin: 0;
+              font-size: @paragraph - 0.4rem;
+            }
+            @media @screen-tablet{
+              font-size: @paragraph;
+              margin: 20px;
+            }
           }
 
           div.btns {

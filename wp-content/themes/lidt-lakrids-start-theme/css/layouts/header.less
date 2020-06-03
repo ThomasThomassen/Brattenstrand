@@ -3,6 +3,10 @@
 
 header{
   height: 100px;
+  width: 100%;
+  @media (max-width: 380px){
+    height: 75px;
+  }
   #top-nav{
     display: flex;
     flex-direction: row;
@@ -11,9 +15,13 @@ header{
     width: 100%;
     height: 100px;
     position: fixed;
+    left: 0;
     z-index: 3;
     background-color: @white-color;
     transition: height .2s ease-in-out, box-shadow .2s ease-in-out;
+      @media (max-width: 380px){
+        height: 75px;
+      }
     &.nav-scrolled {
       height: 50px;
       box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
@@ -23,9 +31,16 @@ header{
       a.logo-fixed {
         top: 0;
         left: 20px;
+        @media (max-width: 400px){
+          left: 10px;
+        }
         svg {
           height: 50px;
           margin-top: 8px;
+          @media (max-width: 400px){
+            height: 40px;
+            margin-top: 12px
+          }
         }
       }
     }
@@ -34,8 +49,14 @@ header{
       top: 0;
       position: absolute;
       transition: top .2s ease-in-out;
+      @media (max-width: 400px){
+        left: 10px;
+      }
       svg{
         height: 100px;
+        @media (max-width: 380px){
+          height: 75px;
+        }
       }
     }
     a.logo-fixed {
@@ -45,6 +66,10 @@ header{
       height: 75px;
     }
     nav.menu-main_nav-container{
+      position: relative;
+      @media @screen-laptop{
+        top: -100px;
+      }
       ul{
         display: flex;
         flex-direction: row;
@@ -79,9 +104,13 @@ header{
     align-items: center;
     height: 100px;
     position: absolute;
+    left: 0;
     width: 100%;
     z-index: 2;
     margin-top: 100px;
+    @media (max-width: 850px){
+      display: none;
+    }
     &.green{
       background-color: @green-color;
     }
@@ -143,6 +172,86 @@ header{
               border-bottom: 5px solid @white-color;
             }
           }
+        }
+      }
+    }
+  }
+  #toggle-menu {
+    display: none;
+
+    &:checked {
+      & + .container {
+        div#top-nav {
+          height: 100%;
+          nav.menu-main_nav-container{
+            top: initial;
+            width: 100%;
+            align-self: center;
+            ul {
+              flex-direction: column;
+              align-items: center;
+              li {
+                margin: 15px;
+              }
+            }
+          }
+        }
+        label {
+          i:nth-child(1) {
+            .animation(inT 0.6s forwards);
+          }
+          i:nth-child(2) {
+            .animation(inM 0.6s forwards);
+          }
+          i:nth-child(3) {
+            .animation(inBtm 0.6s forwards);
+          }
+
+        }
+      }
+    }
+  }
+
+  label {
+    @media @screen-laptop {
+      width: 30px;
+      cursor: pointer;
+      z-index: 999;
+      margin-left: auto;
+      top: 40px;
+      position: fixed;
+      right: 50px;
+      transition: top .2s ease-in-out;
+      @media @screen-phablet {
+        right: 30px;
+      }
+      @media (max-width: 380px) {
+        right: 20px;
+        top: 25px;
+      }
+      &.nav-scrolled{
+        top: 15px;
+      }
+
+      i {
+        display: block;
+        background-color: @black-color;
+        height: 4px;
+        width: 100%;
+        border-radius: 5px;
+
+        &:nth-child(1) {
+          .animation(outT 0.6s backwards);
+          animation-direction: reverse;
+        }
+        &:nth-child(2) {
+          margin: 5px 0;
+          .animation(outM 0.6s backwards);
+          animation-direction: reverse;
+        }
+        &:nth-child(3) {
+          .animation(outBtm 0.6s backwards);
+          animation-direction: reverse;
         }
       }
     }

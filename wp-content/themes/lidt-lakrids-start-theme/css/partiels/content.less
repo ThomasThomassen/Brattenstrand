@@ -5,16 +5,27 @@ section.content {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    @media @screen-phablet{
+      flex-direction: column;
+    }
 
     div.contents {
       width: 50%;
-
+      @media @screen-phablet{
+          width: 100%;
+      }
       &:first-child {
         margin: 0 15px 0 0;
+        @media @screen-phablet{
+          margin: 0 0 15px 0;
+        }
       }
 
       &:last-child {
         margin: 0 0 0 15px;
+        @media @screen-phablet{
+          margin: 15px 0 0 0;
+        }
       }
 
       span.title {
@@ -29,6 +40,9 @@ section.content {
   }
 
   div.title-col {
+    @media @screen-phablet{
+      text-align: center;
+    }
     &.middle {
       text-align: center;
     }
@@ -68,6 +82,10 @@ section.content {
           list-style-type: none;
           margin-left: 20px;
         }
+      }
+      img {
+        max-width: 100%;
+        height: auto;
       }
     }
   }

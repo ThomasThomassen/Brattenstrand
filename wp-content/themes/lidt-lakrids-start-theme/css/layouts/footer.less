@@ -8,6 +8,12 @@ footer{
     flex-direction: row;
     justify-content: space-evenly;
     padding-top: 80px;
+    @media @screen-tablet{
+      padding-top: 40px;
+    }
+    @media @screen-phablet{
+      flex-direction: column;
+    }
     .footer-column{
       text-align: center;
       display: flex;
@@ -18,9 +24,19 @@ footer{
         color: @black-color;
         font-size: @small-title;
         text-transform: uppercase;
+        @media @screen-tablet{
+          font-size: @subtitle;
+        }
+        @media @screen-phablet{
+          font-size: @small-title;
+        }
       }
       ul {
         margin-top: 25px;
+        @media @screen-phablet{
+          margin-top: 0;
+          margin-bottom: 25px;
+        }
         li {
           line-height: 1.8;
           list-style-type: none;
@@ -28,6 +44,12 @@ footer{
           color: @black-color;
           font-weight: 600;
           text-transform: uppercase;
+          @media @screen-tablet{
+            font-size: @paragraph;
+          }
+          @media @screen-phablet{
+            font-size: @subtitle;
+          }
           a {
             text-decoration: none;
             color: @black-color;
@@ -46,6 +68,10 @@ footer{
     justify-content: center;
     margin-top: 75px;
     padding-bottom: 50px;
+    @media @screen-phablet{
+      margin-top: 0;
+      padding-bottom: 40px;
+    }
     p{
       font-size: @subtitle;
       color: @black-color;

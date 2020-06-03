@@ -13,6 +13,8 @@ $type = get_field('type');
         ?>
         <div class="overlay"></div>
         <img src="<?= $image['url'] ?: 'http://via.placeholder.com/1920x1080' ?>" alt="<?= $image['alt'] ?>">
+        <?php if($title || $subtitle || $text) {
+            ?>
         <div class="container">
             <div class="content">
                 <div class="title-col">
@@ -41,6 +43,7 @@ $type = get_field('type');
             </div>
         </div>
         <?
+        }
     }
     ?>
 
