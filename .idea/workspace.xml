@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="255a636d-0a5e-4c15-9a5b-dc43af252375" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/lidt-lakrids-start-theme/css/layouts/footer.less" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/lidt-lakrids-start-theme/css/layouts/footer.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/lidt-lakrids-start-theme/css/layouts/root.less" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/lidt-lakrids-start-theme/css/layouts/root.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/lidt-lakrids-start-theme/css/partiels/banner.less" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/lidt-lakrids-start-theme/css/partiels/banner.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/lidt-lakrids-start-theme/css/partiels/sponsors.less" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/lidt-lakrids-start-theme/css/partiels/sponsors.less" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +100,7 @@
       <workItem from="1590482207919" duration="28611000" />
       <workItem from="1590658323013" duration="22674000" />
       <workItem from="1590744749234" duration="53961000" />
-      <workItem from="1591033957930" duration="94059000" />
+      <workItem from="1591033957930" duration="94534000" />
     </task>
     <task id="LOCAL-00001" summary="tribe">
       <created>1591034208846</created>
@@ -138,7 +137,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591230865839</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="v 1.1 done">
+      <created>1591232571715</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1591232571716</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -152,7 +158,8 @@
     <MESSAGE value="styling, js" />
     <MESSAGE value="finishing touches" />
     <MESSAGE value="v 1.0 done" />
-    <option name="LAST_COMMIT_MESSAGE" value="v 1.0 done" />
+    <MESSAGE value="v 1.1 done" />
+    <option name="LAST_COMMIT_MESSAGE" value="v 1.1 done" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="72" key="#Configure_Path_Variables" timestamp="1591033982914">
@@ -167,10 +174,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="540" y="216" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1590758387191" />
-    <state x="393" y="8" key="CommitChangelistDialog2" timestamp="1591230864395">
+    <state x="393" y="8" key="CommitChangelistDialog2" timestamp="1591232570627">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="393" y="8" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1591230864395" />
+    <state x="393" y="8" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1591232570627" />
     <state x="93" y="93" width="1350" height="638" key="DirDiffDialog" timestamp="1589368653675">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -231,14 +238,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="261" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1589550390168" />
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1591232562979">
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1591232575727">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1591232562979" />
-    <state x="463" y="144" width="778" height="606" key="find.popup" timestamp="1591229680047">
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1591232575727" />
+    <state x="463" y="144" width="778" height="606" key="find.popup" timestamp="1591232999661">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="463" y="144" width="778" height="606" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1591229680047" />
+    <state x="463" y="144" width="778" height="606" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1591232999661" />
     <state x="640" y="307" key="publish.login" timestamp="1589550873335">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
