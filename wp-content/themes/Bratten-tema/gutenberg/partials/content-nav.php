@@ -53,13 +53,14 @@ $contact = get_field('contact');
                 <img src="<?= $img['url'] ?>" alt="">
             </div>
             <?
-        }if ($contact === true){
+        }
+        if ($contact === true) {
             ?>
             <div class="contactform">
                 <?= do_shortcode("[contact-form-7 id=\"506\" title=\"Kontaktformular\"]");
                 ?>
             </div>
-        <?php
+            <?php
         }
         ?>
 

@@ -1,5 +1,5 @@
 <nav id="asideNav">
-<ul id="navigation">
+    <ul id="navigation">
 
-</ul>
+    </ul>
 </nav>

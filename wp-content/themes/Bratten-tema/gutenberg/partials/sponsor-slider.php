@@ -23,12 +23,12 @@ $btn = get_field('btn');
                 <?php
                 foreach ($sponsors as $sponsor) {
                     $image = get_field('image', $sponsor);
-                    if($image){
-                    ?>
-                    <div class="swiper-slide">
-                        <img src="<?= $image['sizes']['large'] ?>" alt="<?= $image['alt'] ?>">
-                    </div>
-                    <?php
+                    if ($image) {
+                        ?>
+                        <div class="swiper-slide">
+                            <img src="<?= $image['sizes']['large'] ?>" alt="<?= $image['alt'] ?>">
+                        </div>
+                        <?php
                     }
                 }
                 ?>

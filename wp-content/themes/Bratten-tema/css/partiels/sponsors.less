@@ -1,45 +1,49 @@
 section.first {
   margin-top: 150px;
-  @media (max-width: 850px){
+  @media (max-width: 850px) {
     margin-top: 50px;
   }
 }
 
-section.sponsor-archive{
-  div.container{
+section.sponsor-archive {
+  div.container {
     display: flex;
     flex-flow: wrap;
-    article.sponsor{
+
+    article.sponsor {
       margin: 0 0 50px;
       flex-basis: 33.33%;
-      @media (max-width: 1250px){
+      @media (max-width: 1250px) {
         margin: 0 0 20px;
       }
-      @media @screen-laptop{
+      @media @screen-laptop {
         flex-basis: 50%;
       }
-      @media @screen-tablet{
+      @media @screen-tablet {
         flex-basis: 100%;
       }
 
-      div.wrapper{
+      div.wrapper {
         padding: 0 25px;
-        @media (max-width: 1250px){
+        @media (max-width: 1250px) {
           padding: 0 10px;
         }
-        div.content{
+
+        div.content {
           position: relative;
           flex-direction: column;
           margin: 0 auto;
           height: 650px;
           width: 100%;
           box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+
           img {
             object-fit: contain;
             width: 100%;
             max-height: 200px;
           }
-          span.title{
+
+          span.title {
             padding: 0 15px;
             margin: 0 auto;
             display: flex;
@@ -49,7 +53,8 @@ section.sponsor-archive{
             margin-top: 16px;
             font-family: @title-font;
           }
-          span.description{
+
+          span.description {
             padding: 0 15px;
             margin: 0 auto;
             display: flex;
@@ -58,7 +63,8 @@ section.sponsor-archive{
             margin-top: 16px;
             font-family: @text-font;
           }
-          span.address{
+
+          span.address {
             padding: 0 15px;
             margin: 0 auto;
             display: flex;
@@ -68,7 +74,8 @@ section.sponsor-archive{
             margin-top: 16px;
             font-family: @text-font;
           }
-          span.btns{
+
+          span.btns {
             display: flex;
             justify-content: center;
             padding-bottom: 25px;

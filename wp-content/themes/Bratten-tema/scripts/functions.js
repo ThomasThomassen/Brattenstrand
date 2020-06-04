@@ -37,7 +37,7 @@ jQuery(document).ready(function () {
         var i;
 
         Array.prototype.forEach.call(navPoint, function (e) {
-                navPoints[e.id] = e.offsetTop;
+            navPoints[e.id] = e.offsetTop;
         });
 
     }

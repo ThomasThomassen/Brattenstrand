@@ -5,25 +5,26 @@ section.content {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    @media @screen-phablet{
+    @media @screen-phablet {
       flex-direction: column;
     }
 
     div.contents {
       width: 50%;
-      @media @screen-phablet{
-          width: 100%;
+      @media @screen-phablet {
+        width: 100%;
       }
+
       &:first-child {
         margin: 0 15px 0 0;
-        @media @screen-phablet{
+        @media @screen-phablet {
           margin: 0 0 15px 0;
         }
       }
 
       &:last-child {
         margin: 0 0 0 15px;
-        @media @screen-phablet{
+        @media @screen-phablet {
           margin: 15px 0 0 0;
         }
       }
@@ -31,9 +32,10 @@ section.content {
       span.title {
         font-size: @small-title;
       }
-      div.contactform{
-        form.wpcf7-form{
-          @media @screen-laptop{
+
+      div.contactform {
+        form.wpcf7-form {
+          @media @screen-laptop {
             flex-direction: column;
           }
         }
@@ -47,9 +49,10 @@ section.content {
   }
 
   div.title-col {
-    @media @screen-phablet{
+    @media @screen-phablet {
       text-align: center;
     }
+
     &.middle {
       text-align: center;
     }
@@ -90,11 +93,13 @@ section.content {
           margin-left: 20px;
         }
       }
+
       img {
         max-width: 100%;
         height: auto;
       }
-      iframe{
+
+      iframe {
         width: 100%;
       }
     }
@@ -124,16 +129,17 @@ section.content {
     form.wpcf7-form {
       display: flex;
       flex-direction: row;
-      @media @screen-phablet{
+      @media @screen-phablet {
         flex-direction: column;
       }
+
       div.wrapper {
         font-size: @paragraph;
         font-family: @title-font;
         position: relative;
         width: 100%;
         margin: 0 15px;
-        @media @screen-phablet{
+        @media @screen-phablet {
           margin: 0;
         }
 

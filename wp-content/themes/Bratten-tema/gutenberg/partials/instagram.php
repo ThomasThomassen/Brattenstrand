@@ -7,20 +7,20 @@ $img = get_field('img');
 ?>
 
 <section class="instagram">
-<div class="container">
-    <div class="content">
-        <img src="<?= $img['url'] ?>" alt="">
-        <div class="text">
+    <div class="container">
+        <div class="content">
+            <img src="<?= $img['url'] ?>" alt="">
+            <div class="text">
     <span class="title">
-        <?= $title ?: 'Din overskrift her'?>
+        <?= $title ?: 'Din overskrift her' ?>
     </span>
-    <span class="subtitle">
-        <?= $subtitle ?: 'Din manchet her'?>
+                <span class="subtitle">
+        <?= $subtitle ?: 'Din manchet her' ?>
     </span>
+            </div>
         </div>
-    </div>
-    <?php
-    echo do_shortcode('[jr_instagram id="2"]');
-    ?>
+        <?php
+        echo do_shortcode('[jr_instagram id="2"]');
+        ?>
     </div>
 </section>

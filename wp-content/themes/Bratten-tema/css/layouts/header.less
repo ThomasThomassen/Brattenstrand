@@ -1,12 +1,13 @@
 @import "../import/variables";
 
-header{
+header {
   height: 100px;
   width: 100%;
-  @media (max-width: 380px){
+  @media (max-width: 380px) {
     height: 75px;
   }
-  #top-nav{
+
+  #top-nav {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -18,69 +19,81 @@ header{
     z-index: 999;
     background-color: @white-color;
     transition: height .2s ease-in-out, box-shadow .2s ease-in-out;
-      @media (max-width: 380px){
-        height: 75px;
-      }
+    @media (max-width: 380px) {
+      height: 75px;
+    }
+
     &.nav-scrolled {
       height: 50px;
       box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
-      a.logo{
+
+      a.logo {
         top: -100px;
       }
+
       a.logo-fixed {
         top: 0;
         left: 20px;
-        @media (max-width: 400px){
+        @media (max-width: 400px) {
           left: 10px;
         }
+
         svg {
           height: 50px;
           margin-top: 8px;
-          @media (max-width: 400px){
+          @media (max-width: 400px) {
             height: 40px;
             margin-top: 12px
           }
         }
       }
     }
-    a.logo{
+
+    a.logo {
       left: 20px;
       top: 0;
       position: absolute;
       transition: top .2s ease-in-out;
-      @media (max-width: 400px){
+      @media (max-width: 400px) {
         left: 10px;
       }
-      svg{
+
+      svg {
         height: 100px;
-        @media (max-width: 380px){
+        @media (max-width: 380px) {
           height: 75px;
         }
       }
     }
+
     a.logo-fixed {
       position: absolute;
       transition: top .2s ease-in-out;
       top: -100px;
       height: 75px;
     }
-    nav.menu-main_nav-container{
+
+    nav.menu-main_nav-container {
       position: relative;
-      @media @screen-laptop{
+      @media @screen-laptop {
         top: -100px;
       }
-      ul{
+
+      ul {
         display: flex;
         flex-direction: row;
-        li{
+
+        li {
           list-style-type: none;
           margin: 0 15px;
-          &.current_page_item{
+
+          &.current_page_item {
             a {
               color: @green-color;
             }
           }
-          a{
+
+          a {
             font-family: @title-font;
             font-weight: 600;
             font-size: @subtitle;
@@ -88,6 +101,7 @@ header{
             text-decoration: none;
             color: @blue-color;
             transition: color .2s ease-in-out;
+
             &:hover {
               color: @green-color;
             }
@@ -96,7 +110,8 @@ header{
       }
     }
   }
-  #fixed-nav{
+
+  #fixed-nav {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -107,42 +122,50 @@ header{
     width: 100%;
     z-index: 2;
     margin-top: 100px;
-    @media (max-width: 850px){
+    @media (max-width: 850px) {
       display: none;
     }
-    &.green{
+
+    &.green {
       background-color: @green-color;
     }
-    nav.menu-sub_nav-container{
-      ul{
+
+    nav.menu-sub_nav-container {
+      ul {
         display: flex;
         flex-direction: row;
-        li{
+
+        li {
           margin: 0 15px;
           list-style-type: none;
           display: flex;
           align-items: center;
-          &#menu-item-30{
-            &:before{
+
+          &#menu-item-30 {
+            &:before {
               background-image: url(https://www.thomasthomassen.dk/wp-content/uploads/2020/05/map-signs-solid.svg);
             }
           }
-          &#menu-item-29{
-            &:before{
+
+          &#menu-item-29 {
+            &:before {
               background-image: url(https://www.thomasthomassen.dk/wp-content/uploads/2020/05/utensils-solid.svg);
             }
           }
-          &#menu-item-28{
-            &:before{
+
+          &#menu-item-28 {
+            &:before {
               background-image: url(https://www.thomasthomassen.dk/wp-content/uploads/2020/05/bed-solid.svg);
             }
           }
-          &#menu-item-27{
-            &:before{
+
+          &#menu-item-27 {
+            &:before {
               background-image: url(https://www.thomasthomassen.dk/wp-content/uploads/2020/05/shopping-basket-solid.svg);
             }
           }
-          &:before{
+
+          &:before {
             content: '';
             background-image: url(https://www.thomasthomassen.dk/wp-content/uploads/2020/05/favicon.png);
             background-size: 100% 100%;
@@ -152,12 +175,14 @@ header{
             margin-right: 10px;
             float: left;
           }
-          &.current_page_item{
+
+          &.current_page_item {
             a {
               border-bottom: 5px solid @white-color;
             }
           }
-          a{
+
+          a {
             font-family: @title-font;
             font-weight: 600;
             font-size: @subtitle;
@@ -167,6 +192,7 @@ header{
             cursor: pointer;
             border-bottom: 0 solid @white-color;
             transition: border-bottom-width .1s linear;
+
             &:hover {
               border-bottom: 5px solid @white-color;
             }
@@ -175,6 +201,7 @@ header{
       }
     }
   }
+
   #toggle-menu {
     display: none;
 
@@ -182,26 +209,32 @@ header{
       & + .container {
         div#top-nav {
           height: 100%;
-          nav.menu-main_nav-container{
+
+          nav.menu-main_nav-container {
             top: initial;
             width: 100%;
             align-self: center;
+
             ul {
               flex-direction: column;
               align-items: center;
+
               li {
                 margin: 15px;
               }
             }
           }
         }
+
         label {
           i:nth-child(1) {
             .animation(inT 0.6s forwards);
           }
+
           i:nth-child(2) {
             .animation(inM 0.6s forwards);
           }
+
           i:nth-child(3) {
             .animation(inBtm 0.6s forwards);
           }
@@ -228,7 +261,7 @@ header{
         right: 20px;
         top: 25px;
       }
-      &.nav-scrolled{
+      &.nav-scrolled {
         top: 15px;
       }
 
@@ -243,11 +276,13 @@ header{
           .animation(outT 0.6s backwards);
           animation-direction: reverse;
         }
+
         &:nth-child(2) {
           margin: 5px 0;
           .animation(outM 0.6s backwards);
           animation-direction: reverse;
         }
+
         &:nth-child(3) {
           .animation(outBtm 0.6s backwards);
           animation-direction: reverse;

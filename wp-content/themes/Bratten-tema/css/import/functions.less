@@ -1,170 +1,175 @@
 .transition(@arguments) {
-    -moz-transition: @arguments;
-    -o-transition: @arguments;
-    -webkit-transition: @arguments;
-    transition: @arguments;
+  -moz-transition: @arguments;
+  -o-transition: @arguments;
+  -webkit-transition: @arguments;
+  transition: @arguments;
 }
 
 .transition-delay(@arguments) {
-    -moz-transition-delay: @arguments;
-    -o-transition-delay: @arguments;
-    -webkit-transition-delay: @arguments;
-    transition-delay: @arguments;
+  -moz-transition-delay: @arguments;
+  -o-transition-delay: @arguments;
+  -webkit-transition-delay: @arguments;
+  transition-delay: @arguments;
 }
 
 .keyframes(@name; @arguments) {
-    @-moz-keyframes @name { @arguments(); }
-    @-webkit-keyframes @name { @arguments(); }
-    @keyframes @name { @arguments(); }
+  @-moz-keyframes @name { @arguments();
+  }
+  @-webkit-keyframes @name { @arguments();
+  }
+  @keyframes @name { @arguments();
+  }
 }
 
 .animation(@arguments) {
-    -webkit-animation: @arguments;
-    -moz-animation: @arguments;
-    animation: @arguments;
+  -webkit-animation: @arguments;
+  -moz-animation: @arguments;
+  animation: @arguments;
 }
 
 .transform(@arguments) {
-    -moz-transform: @arguments;
-    -ms-transform: @arguments;
-    -o-transform: @arguments;
-    -webkit-transform: @arguments;
-    transform: @arguments;
+  -moz-transform: @arguments;
+  -ms-transform: @arguments;
+  -o-transform: @arguments;
+  -webkit-transform: @arguments;
+  transform: @arguments;
 }
 
 .transform-origin(@arguments) {
-    -webkit-transform-origin: @arguments;
-    transform-origin: @arguments;
+  -webkit-transform-origin: @arguments;
+  transform-origin: @arguments;
 }
 
 .font-size(@sizeValue) {
-    @remValue: @sizeValue;
-    @pxValue: (@sizeValue * 10);
-    font-size: ~"@{pxValue}px";
-    font-size: ~"@{remValue}rem";
+  @remValue: @sizeValue;
+  @pxValue: (@sizeValue * 10);
+  font-size: ~"@{pxValue}px";
+  font-size: ~"@{remValue}rem";
 }
 
 .box-sizing(@arguments) {
-    -moz-box-sizing: @arguments;
-    -webkit-box-sizing: @arguments;
-    box-sizing: @arguments;
+  -moz-box-sizing: @arguments;
+  -webkit-box-sizing: @arguments;
+  box-sizing: @arguments;
 }
 
 .text-decoration-skip(@arguments) {
-    -moz-text-decoration-skip: @arguments;
-    -webkit-text-decoration-skip: @arguments;
-    text-decoration-skip: @arguments;
+  -moz-text-decoration-skip: @arguments;
+  -webkit-text-decoration-skip: @arguments;
+  text-decoration-skip: @arguments;
 }
 
 .text-decoration-color(@arguments) {
-    -moz-text-decoration-color: @arguments;
-    -webkit-text-decoration-color: @arguments;
-    text-decoration-color: @arguments;
+  -moz-text-decoration-color: @arguments;
+  -webkit-text-decoration-color: @arguments;
+  text-decoration-color: @arguments;
 }
 
 .clearfix() {
-    *zoom: 1;
+  *zoom: 1;
 
-    &:before,
-    &:after {
-        content: '';
-        display: table;
-    }
+  &:before,
+  &:after {
+    content: '';
+    display: table;
+  }
 
-    &:after { clear: both; }
+  &:after {
+    clear: both;
+  }
 }
 
-.blur(@value){
-    filter: blur(@value);
-    -webkit-filter: blur(@value);
+.blur(@value) {
+  filter: blur(@value);
+  -webkit-filter: blur(@value);
 }
 
 .col(@cols: 12, @margin: true) {
-    .margin(@margin);
-    .margin(@m) when (@margin = true) {
-        margin: 0 ~"@{column-gap}px";
-    }
+  .margin(@margin);
+  .margin(@m) when (@margin = true) {
+    margin: 0 ~"@{column-gap}px";
+  }
 
-    @media @screen-tablet {
-        .width(@cols);
-        .width(@w) when not (@cols = 0) {
-            @double-gap: @column-gap * 2;
-            @width: (@cols * @double-gap - @double-gap) + (@cols * @colum-width);
-            max-width: ~"@{width}px";
-        }
+  @media @screen-tablet {
+    .width(@cols);
+    .width(@w) when not (@cols = 0) {
+      @double-gap: @column-gap * 2;
+      @width: (@cols * @double-gap - @double-gap) + (@cols * @colum-width);
+      max-width: ~"@{width}px";
     }
+  }
 }
 
-    // Flexbox display
+// Flexbox display
 // flex or inline-flex
 .flex-display(@display: flex) {
-    display: ~"-webkit-@{display}";
-    display: ~"-ms-@{display}box"; // IE10 uses -ms-flexbox
-    display: ~"-ms-@{display}"; // IE11
-    display: @display;
+  display: ~"-webkit-@{display}";
+  display: ~"-ms-@{display}box"; // IE10 uses -ms-flexbox
+  display: ~"-ms-@{display}"; // IE11
+  display: @display;
 }
 
 // The 'flex' shorthand
 // - applies to: flex items
 // <positive-number>, initial, auto, or none
 .flex(@columns: initial) {
-    -webkit-flex: @columns;
-    -ms-flex: @columns;
-    flex: @columns;
+  -webkit-flex: @columns;
+  -ms-flex: @columns;
+  flex: @columns;
 }
 
 // Flex Flow Direction
 // - applies to: flex containers
 // row | row-reverse | column | column-reverse
 .flex-direction(@direction: row) {
-    -webkit-flex-direction: @direction;
-    -ms-flex-direction: @direction;
-    flex-direction: @direction;
+  -webkit-flex-direction: @direction;
+  -ms-flex-direction: @direction;
+  flex-direction: @direction;
 }
 
 // Flex Line Wrapping
 // - applies to: flex containers
 // nowrap | wrap | wrap-reverse
 .flex-wrap(@wrap: nowrap) {
-    -webkit-flex-wrap: @wrap;
-    -ms-flex-wrap: @wrap;
-    flex-wrap: @wrap;
+  -webkit-flex-wrap: @wrap;
+  -ms-flex-wrap: @wrap;
+  flex-wrap: @wrap;
 }
 
 // Flex Direction and Wrap
 // - applies to: flex containers
 // <flex-direction> || <flex-wrap>
 .flex-flow(@flow) {
-    -webkit-flex-flow: @flow;
-    -ms-flex-flow: @flow;
-    flex-flow: @flow;
+  -webkit-flex-flow: @flow;
+  -ms-flex-flow: @flow;
+  flex-flow: @flow;
 }
 
 // Display Order
 // - applies to: flex items
 // <integer>
 .flex-order(@order: 0) {
-    -webkit-order: @order;
-    -ms-order: @order;
-    order: @order;
+  -webkit-order: @order;
+  -ms-order: @order;
+  order: @order;
 }
 
 // Flex grow factor
 // - applies to: flex items
 // <number>
 .flex-grow(@grow: 0) {
-    -webkit-flex-grow: @grow;
-    -ms-flex-grow: @grow;
-    flex-grow: @grow;
+  -webkit-flex-grow: @grow;
+  -ms-flex-grow: @grow;
+  flex-grow: @grow;
 }
 
 // Flex shrink
 // - applies to: flex item shrink factor
 // <number>
 .flex-shrink(@shrink: 1) {
-    -webkit-flex-shrink: @shrink;
-    -ms-flex-shrink: @shrink;
-    flex-shrink: @shrink;
+  -webkit-flex-shrink: @shrink;
+  -ms-flex-shrink: @shrink;
+  flex-shrink: @shrink;
 }
 
 // Flex basis
@@ -172,92 +177,92 @@
 // - applies to: flex itemsnitial main size of the flex item
 // <width>
 .flex-basis(@width: auto) {
-    -webkit-flex-basis: @width;
-    -ms-flex-basis: @width;
-    flex-basis: @width;
+  -webkit-flex-basis: @width;
+  -ms-flex-basis: @width;
+  flex-basis: @width;
 }
 
 // Axis Alignment
 // - applies to: flex containers
 // flex-start | flex-end | center | space-between | space-around
 .justify-content(@justify: flex-start) {
-    -webkit-justify-content: @justify;
-    -ms-justify-content: @justify;
-    justify-content: @justify;
+  -webkit-justify-content: @justify;
+  -ms-justify-content: @justify;
+  justify-content: @justify;
 }
 
 // Packing Flex Lines
 // - applies to: multi-line flex containers
 // flex-start | flex-end | center | space-between | space-around | stretch
 .align-content(@align: stretch) {
-    -webkit-align-content: @align;
-    -ms-align-content: @align;
-    align-content: @align;
+  -webkit-align-content: @align;
+  -ms-align-content: @align;
+  align-content: @align;
 }
 
 // Cross-axis Alignment
 // - applies to: flex containers
 // flex-start | flex-end | center | baseline | stretch
 .align-items(@align: stretch) {
-    -webkit-align-items: @align;
-    -ms-align-items: @align;
-    align-items: @align;
+  -webkit-align-items: @align;
+  -ms-align-items: @align;
+  align-items: @align;
 }
 
 // Cross-axis Alignment
 // - applies to: flex items
 // auto | flex-start | flex-end | center | baseline | stretch
 .align-self(@align: auto) {
-    -webkit-align-self: @align;
-    -ms-align-self: @align;
-    align-self: @align;
+  -webkit-align-self: @align;
+  -ms-align-self: @align;
+  align-self: @align;
 }
 
 
 // grid | inline-grid
 .grid-display(@display: grid) {
-    display: ~"-ms-@{display}";
-    display: @display;
+  display: ~"-ms-@{display}";
+  display: @display;
 }
 
 .grid-template-columns(@arguments) {
-    -ms-grid-columns: @arguments;
-    grid-template-columns: @arguments;
+  -ms-grid-columns: @arguments;
+  grid-template-columns: @arguments;
 }
 
 .grid-template-rows(@arguments) {
-    -ms-grid-rows: @arguments;
-    grid-template-rows: @arguments;
+  -ms-grid-rows: @arguments;
+  grid-template-rows: @arguments;
 }
 
 .grid-column(@grids: 1) {
-    -ms-grid-column: @grids;
-    grid-column: @grids;
+  -ms-grid-column: @grids;
+  grid-column: @grids;
 }
 
 .grid-row(@grids: 1) {
-    -ms-grid-row: @grids;
-    grid-row: @grids;
+  -ms-grid-row: @grids;
+  grid-row: @grids;
 }
 
 .grid-gap(@gap: 0) {
-    -ms-grid-gap: @gap;
-    grid-gap: @gap;
+  -ms-grid-gap: @gap;
+  grid-gap: @gap;
 }
 
 
 .placeholder(@rules) {
 
-    &::-webkit-input-placeholder {
-        @rules();
-    }
-    &:-moz-placeholder {
-        @rules();
-    }
-    &::-moz-placeholder {
-        @rules();
-    }
-    &:-ms-input-placeholder {
-        @rules();
-    }
+  &::-webkit-input-placeholder {
+    @rules();
+  }
+  &:-moz-placeholder {
+    @rules();
+  }
+  &::-moz-placeholder {
+    @rules();
+  }
+  &:-ms-input-placeholder {
+    @rules();
+  }
 }

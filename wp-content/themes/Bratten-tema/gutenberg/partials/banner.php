@@ -13,36 +13,36 @@ $type = get_field('type');
         ?>
         <div class="overlay"></div>
         <img src="<?= $image['url'] ?: 'http://via.placeholder.com/1920x1080' ?>" alt="<?= $image['alt'] ?>">
-        <?php if($title || $subtitle || $text) {
+        <?php if ($title || $subtitle || $text) {
             ?>
-        <div class="container">
-            <div class="content">
-                <div class="title-col">
+            <div class="container">
+                <div class="content">
+                    <div class="title-col">
                         <span class="title">
             <?= $title ?>
         </span>
-                </div>
-                <div class="txt-col">
+                    </div>
+                    <div class="txt-col">
                 <span class="subtitle">
                     <?= $subtitle ?>
                 </span>
-                    <p><?= $text ?></p>
-                    <?
-                    if ($addbtn === true) {
-                        $btn = get_field('btn');
-                        $btnstyle = get_field('btn-style');
-                        ?>
-                        <div class="btns">
-                            <a href="<?= $btn['url'] ?: '#'; ?>"
-                               class="btn <?= $btnstyle ?>"><?= $btn['title'] ?: 'Din knap vises her'; ?></a>
-                        </div>
+                        <p><?= $text ?></p>
                         <?
-                    }
-                    ?>
+                        if ($addbtn === true) {
+                            $btn = get_field('btn');
+                            $btnstyle = get_field('btn-style');
+                            ?>
+                            <div class="btns">
+                                <a href="<?= $btn['url'] ?: '#'; ?>"
+                                   class="btn <?= $btnstyle ?>"><?= $btn['title'] ?: 'Din knap vises her'; ?></a>
+                            </div>
+                            <?
+                        }
+                        ?>
+                    </div>
                 </div>
             </div>
-        </div>
-        <?
+            <?
         }
     }
     ?>

@@ -1,14 +1,14 @@
 <article class="sponsor">
     <div class="wrapper">
         <div class="content">
-    <img src="<?= $image['url'] ?>" alt="">
-    <span class="title">
+            <img src="<?= $image['url'] ?>" alt="">
+            <span class="title">
         <?= $title ?>
     </span>
-    <span class="description">
+            <span class="description">
         <?= $description ?>
     </span>
-    <span class="address">
+            <span class="address">
         <?= $address ?>
     </span>
             <span class="btns">

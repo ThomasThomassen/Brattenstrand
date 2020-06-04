@@ -1,10 +1,11 @@
-section.standard-banner, .event-banner{
+section.standard-banner, .event-banner {
   margin: 0 0 75px 0;
   position: relative;
-  @media @screen-phablet{
+  @media @screen-phablet {
     margin: 0 0 25px 0;
 
   }
+
   div.overlay {
     z-index: -1;
     position: absolute;
@@ -14,6 +15,7 @@ section.standard-banner, .event-banner{
     width: 100%;
     height: calc(~'100% - 4px');
   }
+
   img {
     width: 100%;
     object-fit: cover;
@@ -21,155 +23,172 @@ section.standard-banner, .event-banner{
     max-height: 500px;
     z-index: -2;
   }
+
   div.container {
     height: 100%;
     position: absolute;
     top: 0;
-    div.content{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 100%;
-      @media @screen-tablet{
+
+    div.content {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      height: 100%;
+      @media @screen-tablet {
         flex-direction: column;
         justify-content: space-evenly;
         text-align: center;
       }
-    div.title-col{
+
+      div.title-col {
         align-self: center;
         flex-basis: 33.33%;
         text-align: center;
-      div.btns{
-        a.btn{
-          margin-top: 45px;
-          @media @screen-tablet{
-            margin-top: 15px;
+
+        div.btns {
+          a.btn {
+            margin-top: 45px;
+            @media @screen-tablet {
+              margin-top: 15px;
+            }
+          }
+        }
+
+        span.title {
+          color: @white-color;
+          font-size: @large-title;
+          font-weight: 600;
+          text-transform: uppercase;
+          @media @screen-laptop {
+            font-size: @large-title - 1rem;
           }
         }
       }
-      span.title{
-        color: @white-color;
-        font-size: @large-title;
-        font-weight: 600;
-        text-transform: uppercase;
-        @media @screen-laptop{
-          font-size: @large-title - 1rem;
+
+      div.txt-col {
+        align-self: center;
+        flex-basis: 33.33%;
+        @media @screen-laptop {
+          flex-basis: 50%;
         }
-      }
-    }
-    div.txt-col{
-      align-self: center;
-      flex-basis: 33.33%;
-      @media @screen-laptop{
-        flex-basis: 50%;
-      }
-      span.subtitle{
-        color: @white-color;
-        font-size: @medium-title;
-        font-weight: 600;
-        border-bottom: 3px solid @white-color;
-        text-transform: uppercase;
-      }
-      p {
-        font-family: @text-font;
-        color: @white-color;
-        font-size: @paragraph;
-        margin-top: 10px;
-      }
-      div.btns{
-        @media @screen-tablet{
-          justify-content: center;
-          a.btn {
-            @media @screen-tablet{
-              margin-top: 15px;
+
+        span.subtitle {
+          color: @white-color;
+          font-size: @medium-title;
+          font-weight: 600;
+          border-bottom: 3px solid @white-color;
+          text-transform: uppercase;
+        }
+
+        p {
+          font-family: @text-font;
+          color: @white-color;
+          font-size: @paragraph;
+          margin-top: 10px;
+        }
+
+        div.btns {
+          @media @screen-tablet {
+            justify-content: center;
+            a.btn {
+              @media @screen-tablet {
+                margin-top: 15px;
+              }
             }
           }
         }
       }
     }
-    }
   }
 }
 
-section.standard-banner{
-  img{
-    @media @screen-phablet{
+section.standard-banner {
+  img {
+    @media @screen-phablet {
       height: 200px;
     }
   }
 }
 
-section.event-banner{
-  div.container{
+section.event-banner {
+  div.container {
     right: 50%;
     transform: translate(50%, -50%);
     top: 50%;
   }
 }
 
-section.swiper-banner{
+section.swiper-banner {
   overflow: hidden;
   margin: 0 0 75px 0;
-  @media @screen-phablet{
+  @media @screen-phablet {
     margin: 0 0 25px 0;
     height: 200px;
   }
+
   .swiper-navigation {
     width: 100%;
     height: 100%;
     position: relative;
-  .swiper-slide {
-    img {
-      height: 100%;
-      width: 100%;
-      object-fit: cover;
-      max-height: 500px;
-    }
-    div.title-col{
-      position: absolute;
-      bottom: 0;
-      display: flex;
-      justify-content: flex-start;
-      @media @screen-tablet{
-        top: 75px;
+
+    .swiper-slide {
+      img {
+        height: 100%;
         width: 100%;
+        object-fit: cover;
+        max-height: 500px;
       }
-      span.title {
-        color: @white-color;
-        font-size: @large-title;
-        font-weight: 600;
-        text-transform: uppercase;
-        z-index: 1;
-        opacity: 0.8;
-        @media @screen-laptop{
-          font-size: @large-title - 1rem;
-        }
-        @media @screen-tablet{
+
+      div.title-col {
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        justify-content: flex-start;
+        @media @screen-tablet {
+          top: 75px;
           width: 100%;
-          text-align: center;
         }
-        @media @screen-phablet{
-          font-size: @large-title - 2rem;
+
+        span.title {
+          color: @white-color;
+          font-size: @large-title;
+          font-weight: 600;
+          text-transform: uppercase;
+          z-index: 1;
+          opacity: 0.8;
+          @media @screen-laptop {
+            font-size: @large-title - 1rem;
+          }
+          @media @screen-tablet {
+            width: 100%;
+            text-align: center;
+          }
+          @media @screen-phablet {
+            font-size: @large-title - 2rem;
+          }
         }
       }
     }
-  }
-    .swiper-pagination{
+
+    .swiper-pagination {
       display: flex;
       justify-content: flex-end;
-      span.swiper-pagination-bullet{
+
+      span.swiper-pagination-bullet {
         background: transparent;
         border: 2px solid @white-color;
         width: 14px;
         height: 14px;
         opacity: 0.8;
         transition: border, background .2s ease-out;
-        &.swiper-pagination-bullet-active{
+
+        &.swiper-pagination-bullet-active {
           height: 14px;
           width: 14px;
           background: @white-color;
         }
-        &:hover:not(.swiper-pagination-bullet-active){
+
+        &:hover:not(.swiper-pagination-bullet-active) {
           height: 14px;
           width: 14px;
           background: @white-color;

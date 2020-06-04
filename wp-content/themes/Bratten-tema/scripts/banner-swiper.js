@@ -6,6 +6,6 @@ var swiper = new Swiper('div.swiper-navigation', {
         clickable: true,
     },
     autoplay: {
-      delay: 6000,
+        delay: 6000,
     },
 });

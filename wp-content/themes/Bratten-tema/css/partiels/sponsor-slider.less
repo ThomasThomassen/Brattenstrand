@@ -1,5 +1,6 @@
-section.sponsors-overview{
+section.sponsors-overview {
   margin: 0 0 75px 0;
+
   span.title {
     color: @black-color;
     font-size: @medium-title;
@@ -8,7 +9,8 @@ section.sponsors-overview{
     justify-content: center;
     margin-bottom: 25px;
   }
-  span.subtitle{
+
+  span.subtitle {
     font-family: @text-font;
     color: @black-color;
     font-size: @paragraph;
@@ -16,37 +18,42 @@ section.sponsors-overview{
     justify-content: center;
     width: 54%;
     margin: 0 auto 25px;
-    @media @screen-tablet{
+    @media @screen-tablet {
       width: 80%;
     }
-    @media @screen-mobile{
+    @media @screen-mobile {
       width: 100%;
       text-align: center;
     }
+
     a {
       text-decoration: none;
       color: @blue-color;
       transition: color .2s ease-in-out;
-      &:hover{
+
+      &:hover {
         color: @green-color;
       }
     }
   }
-  div.btns{
+
+  div.btns {
     display: flex;
     justify-content: center;
   }
-  div.sponsor-swiper{
+
+  div.sponsor-swiper {
     position: relative;
     overflow: hidden;
-    div.swiper-wrapper{
-      div.swiper-slide{
-          img{
-            height: 100%;
-            width: 100%;
-            max-height: 150px;
-            object-fit: contain;
-          }
+
+    div.swiper-wrapper {
+      div.swiper-slide {
+        img {
+          height: 100%;
+          width: 100%;
+          max-height: 150px;
+          object-fit: contain;
+        }
       }
     }
   }
