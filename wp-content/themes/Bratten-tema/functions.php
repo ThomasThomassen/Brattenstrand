@@ -18,15 +18,6 @@ require_once(__DIR__."/php/enqueue_scripts.php");
 // Setup admin panel with reorder menu, edit menu and adding template
 require_once(__DIR__."/php/admin_setup.php");
 
-// Lidt Lakrids answer to a better Wordpress
-require_once(__DIR__."/php/lakrids_optimize.php");
-
-
-// Add lazy load to images
-add_filter("lazy_load_images", "__return_true");
-add_filter("minify_js", "__return_true");
-add_filter("html_minify", "__return_true");
-
 
 // Register menu and sidebar
 register_nav_menus(array(
