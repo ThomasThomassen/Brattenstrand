@@ -16,7 +16,7 @@ header {
     height: 100px;
     position: fixed;
     left: 0;
-    z-index: 999;
+    z-index: 10;
     background-color: @white-color;
     transition: height .2s ease-in-out, box-shadow .2s ease-in-out;
     @media (max-width: 380px) {
@@ -70,7 +70,7 @@ header {
       position: absolute;
       transition: top .2s ease-in-out;
       top: -100px;
-      height: 75px;
+      height: 50px;
     }
 
     nav.menu-main_nav-container {
@@ -209,6 +209,7 @@ header {
       & + .container {
         div#top-nav {
           height: 100%;
+          z-index: 999;
 
           nav.menu-main_nav-container {
             top: initial;

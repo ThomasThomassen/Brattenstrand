@@ -11,6 +11,7 @@ div.tribe-common {
       @media (max-width: 800px) {
         flex-wrap: nowrap;
         margin: 0 0 32px 0;
+        flex-direction: column-reverse;
       }
 
       div.tribe-events-header__events-bar {
@@ -79,6 +80,9 @@ div.tribe-common {
                 flex: none;
                 margin-top: 0;
                 width: auto;
+                @media @screen-mobile{
+                  min-width: 75px;
+                }
 
                 &:hover {
                   background-color: @green-color;
@@ -95,7 +99,9 @@ div.tribe-common {
         margin-bottom: 35px;
         flex: initial;
         @media (max-width: 800px) {
-          width: 100%;
+          width: 150px;
+          border: none;
+          margin-bottom: 15px;
         }
 
         div.tribe-events-c-top-bar__datepicker {

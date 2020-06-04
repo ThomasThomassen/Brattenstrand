@@ -1,40 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="255a636d-0a5e-4c15-9a5b-dc43af252375" name="Default Changelist" comment="v 1.2 done">
+    <list default="true" id="255a636d-0a5e-4c15-9a5b-dc43af252375" name="Default Changelist" comment="formatting">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/Bratten-tema/css/gutenberg.less" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/Bratten-tema/css/gutenberg.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/Bratten-tema/css/import/animations.less" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/Bratten-tema/css/import/animations.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/Bratten-tema/css/import/functions.less" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/Bratten-tema/css/import/functions.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/Bratten-tema/css/import/reset.less" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/Bratten-tema/css/import/reset.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/Bratten-tema/css/import/variables.less" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/Bratten-tema/css/import/variables.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/Bratten-tema/css/layouts/footer.less" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/Bratten-tema/css/layouts/footer.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/Bratten-tema/css/layouts/header.less" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/Bratten-tema/css/layouts/header.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/Bratten-tema/css/layouts/root.less" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/Bratten-tema/css/layouts/root.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/Bratten-tema/css/partiels/banner.less" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/Bratten-tema/css/partiels/banner.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/Bratten-tema/css/partiels/cards.less" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/Bratten-tema/css/partiels/cards.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/Bratten-tema/css/partiels/content-nav.less" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/Bratten-tema/css/partiels/content-nav.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/Bratten-tema/css/partiels/content.less" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/Bratten-tema/css/partiels/content.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/Bratten-tema/css/partiels/events.less" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/Bratten-tema/css/partiels/events.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/Bratten-tema/css/partiels/instagram.less" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/Bratten-tema/css/partiels/instagram.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/Bratten-tema/css/partiels/single-event.less" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/Bratten-tema/css/partiels/single-event.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/Bratten-tema/css/partiels/sponsor-slider.less" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/Bratten-tema/css/partiels/sponsor-slider.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/Bratten-tema/css/partiels/sponsors.less" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/Bratten-tema/css/partiels/sponsors.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/Bratten-tema/css/style.less" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/Bratten-tema/css/style.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/Bratten-tema/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/Bratten-tema/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/Bratten-tema/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/Bratten-tema/functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/Bratten-tema/gutenberg/partials/banner.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/Bratten-tema/gutenberg/partials/banner.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/Bratten-tema/gutenberg/partials/content-nav.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/Bratten-tema/gutenberg/partials/content-nav.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/Bratten-tema/gutenberg/partials/instagram.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/Bratten-tema/gutenberg/partials/instagram.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/Bratten-tema/gutenberg/partials/side-nav.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/Bratten-tema/gutenberg/partials/side-nav.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/Bratten-tema/gutenberg/partials/sponsor-slider.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/Bratten-tema/gutenberg/partials/sponsor-slider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/Bratten-tema/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/Bratten-tema/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/Bratten-tema/php/admin_setup.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/Bratten-tema/php/admin_setup.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/Bratten-tema/php/enqueue_scripts.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/Bratten-tema/php/enqueue_scripts.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/Bratten-tema/php/head_cleanup.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/Bratten-tema/php/head_cleanup.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/Bratten-tema/scripts/banner-swiper.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/Bratten-tema/scripts/banner-swiper.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/Bratten-tema/scripts/functions.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/Bratten-tema/scripts/functions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/Bratten-tema/template/sponsors.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/Bratten-tema/template/sponsors.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +103,7 @@
       <workItem from="1590482207919" duration="28611000" />
       <workItem from="1590658323013" duration="22674000" />
       <workItem from="1590744749234" duration="53961000" />
-      <workItem from="1591033957930" duration="101809000" />
+      <workItem from="1591033957930" duration="104098000" />
     </task>
     <task id="LOCAL-00001" summary="tribe">
       <created>1591034208846</created>
@@ -189,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591241179350</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="formatting">
+      <created>1591242300596</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1591242300596</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -205,7 +184,8 @@
     <MESSAGE value="v 1.0 done" />
     <MESSAGE value="v 1.1 done" />
     <MESSAGE value="v 1.2 done" />
-    <option name="LAST_COMMIT_MESSAGE" value="v 1.2 done" />
+    <MESSAGE value="formatting" />
+    <option name="LAST_COMMIT_MESSAGE" value="formatting" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="72" key="#Configure_Path_Variables" timestamp="1591033982914">
@@ -220,10 +200,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="540" y="216" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1590758387191" />
-    <state x="55" y="8" key="CommitChangelistDialog2" timestamp="1591241184208">
+    <state x="55" y="8" key="CommitChangelistDialog2" timestamp="1591243707345">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="55" y="8" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1591241184208" />
+    <state x="55" y="8" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1591243707345" />
     <state x="93" y="93" width="1350" height="638" key="DirDiffDialog" timestamp="1589368653675">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -284,14 +264,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="261" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1589550390168" />
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1591242292132">
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1591242305130">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1591242292132" />
-    <state x="463" y="144" width="778" height="606" key="find.popup" timestamp="1591240555760">
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1591242305130" />
+    <state x="463" y="144" width="778" height="606" key="find.popup" timestamp="1591243240386">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="463" y="144" width="778" height="606" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1591240555760" />
+    <state x="463" y="144" width="778" height="606" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1591243240386" />
     <state x="640" y="307" key="publish.login" timestamp="1589550873335">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
