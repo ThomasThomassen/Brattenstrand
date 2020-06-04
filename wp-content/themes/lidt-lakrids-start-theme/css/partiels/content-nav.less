@@ -44,9 +44,31 @@ section#sectionNav {
               &.one{
                 width: 100%;
             }
+              &.two{
+                width: 50%;
+              }
+              &.three{
+                width: 33.33%;
+              }
+              &.four{
+                width: 50%;
+              }
+              &.five{
+                width: 33.33%;
+              }
               &.six{
                 width: 33.33%;
               }
+              &.seven{
+                width: 50%;
+              }
+              &.eight{
+                width: 50%;
+              }
+              &.nine{
+                width: 33.33%;
+              }
+
             }
 
             a {
@@ -73,12 +95,14 @@ section#sectionNav {
 }
 
 article.aside {
+  &:first-child{
+    span.nav-title{
+      padding-top: 125px;
+    }
+  }
   span.nav-title {
     opacity: 0;
     padding-top: 75px;
-    &:first-child{
-      padding-top: 125px;
-    }
   }
 
   div.contents {

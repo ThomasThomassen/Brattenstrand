@@ -13,6 +13,11 @@
         ?>
     </title>
     <?php wp_head(); ?>
+    <style type="text/css" media="screen">
+        html{
+            margin-top: 0 !important;
+        }
+        </style>
     <link rel="icon" type="image/png" href="<?php bloginfo('stylesheet_directory'); ?>/images/favicon/favicon.png"/>
 </head>
 <body>

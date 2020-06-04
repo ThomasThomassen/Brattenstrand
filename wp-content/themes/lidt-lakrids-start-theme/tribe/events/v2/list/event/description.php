@@ -51,6 +51,8 @@ $event_date_attr = $event->dates->start->format( Dates::DBDATEFORMAT );
 	<time class="tribe-events-calendar-list__event-datetime" datetime="<?php echo esc_attr( $event_date_attr ); ?>">
 		<?php echo $event->schedule_details->value(); ?>
 	</time>
-    <a href="<?php echo esc_url( $event->permalink ); ?>" class="btn blue">LÆS MERE</a>
+    <div class="btns">
+        <a href="<?php echo esc_url( $event->permalink ); ?>" class="btn blue">LÆS MERE</a>
+    </div>
 	<?php $this->template( 'list/event/date/meta', [ 'event' => $event ] ); ?>
 </div>

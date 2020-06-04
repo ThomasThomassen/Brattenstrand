@@ -7,6 +7,7 @@ $btn = get_field('btn');
 $btnstyle = get_field('btn-style');
 $btnpos = get_field('btn-pos');
 $img = get_field('img');
+$contact = get_field('contact');
 ?>
 
 <article class="aside">
@@ -52,7 +53,15 @@ $img = get_field('img');
                 <img src="<?= $img['url'] ?>" alt="">
             </div>
             <?
+        }if ($contact === true){
+            ?>
+            <div class="contactform">
+                <?= do_shortcode("[contact-form-7 id=\"506\" title=\"Kontaktformular\"]");
+                ?>
+            </div>
+        <?php
         }
         ?>
+
     </div>
 </article>

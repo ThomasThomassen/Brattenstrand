@@ -90,6 +90,15 @@ section.standard-banner, .event-banner{
     }
   }
 }
+
+section.standard-banner{
+  img{
+    @media @screen-phablet{
+      height: 200px;
+    }
+  }
+}
+
 section.swiper-banner{
   overflow: hidden;
   margin: 0 0 75px 0;
@@ -113,7 +122,7 @@ section.swiper-banner{
       bottom: 0;
       display: flex;
       justify-content: flex-start;
-      @media @screen-phablet{
+      @media @screen-tablet{
         top: 75px;
         width: 100%;
       }
@@ -127,10 +136,12 @@ section.swiper-banner{
         @media @screen-laptop{
           font-size: @large-title - 1rem;
         }
-        @media @screen-phablet{
-          font-size: @large-title - 2rem;
+        @media @screen-tablet{
           width: 100%;
           text-align: center;
+        }
+        @media @screen-phablet{
+          font-size: @large-title - 2rem;
         }
       }
     }

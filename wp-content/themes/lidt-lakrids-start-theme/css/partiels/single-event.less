@@ -3,12 +3,18 @@ div.tribe-block__events-link{
 }
 div.tribe-events-single{
   margin-top: 100px;
+  @media (max-width: 850px){
+    margin-top: 50px;
+  }
   div.header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     border-bottom: 1px solid @blue-color;
     margin-bottom: 25px;
+    @media (max-width: 850px){
+      flex-direction: column;
+    }
     div.title-col{
       align-self: center;
       h1.tribe-events-single-event-title{
@@ -21,12 +27,16 @@ div.tribe-events-single{
     div.info-col{
       display: flex;
       flex-direction: row;
+      @media (max-width: 850px){
+        justify-content: center;
+      }
       div.tribe-events-schedule{
         h2.tribe-events-schedule__datetime{
           font-family: @title-font;
           font-weight: 600;
           text-transform: uppercase;
           color: @blue-color;
+          display: flex;
           span.tribe-events-schedule__separator--date{
             display: none;
           }
@@ -35,19 +45,33 @@ div.tribe-events-single{
             padding-right: 25px;
             font-size: @subtitle;
             border-right: 1px solid @blue-color;
+            @media @screen-phablet{
+              margin-right: 10px;
+              padding-right: 10px;
+            }
           }
           span.tribe-events-schedule__time{
             font-size: @subtitle;
+          }
+          span.tribe-events-schedule__separator{
+            align-self: center;
           }
           span.tribe-events-schedule__time--end{
             margin-right: 25px;
             padding-right: 25px;
             border-right: 1px solid @blue-color;
+            @media @screen-phablet{
+              margin-right: 10px;
+              padding-right: 10px;
+            }
           }
         }
       }
       div.tribe-block__event-price {
         margin: 1em 0 1.5em;
+        @media @screen-tablet{
+          margin: 0;
+        }
         span.tribe-block__event-price__cost{
           font-family: @title-font;
           font-weight: 600;
@@ -77,6 +101,9 @@ div.tribe-events-single{
       flex-direction: row;
       padding-bottom: 50px;
       border-bottom: 1px solid @blue-color;
+      @media (max-width: 850px){
+        flex-direction: column-reverse;
+      }
       div.txt-col{
         margin-right: 25px;
         div.description{

@@ -9,8 +9,21 @@ section.sponsor-archive{
     article.sponsor{
       margin: 0 0 50px;
       flex-basis: 33.33%;
+      @media (max-width: 1250px){
+        margin: 0 0 20px;
+      }
+      @media @screen-laptop{
+        flex-basis: 50%;
+      }
+      @media @screen-tablet{
+        flex-basis: 100%;
+      }
+
       div.wrapper{
         padding: 0 25px;
+        @media (max-width: 1250px){
+          padding: 0 10px;
+        }
         div.content{
           position: relative;
           flex-direction: column;
@@ -24,7 +37,7 @@ section.sponsor-archive{
             max-height: 200px;
           }
           span.title{
-            width: 80%;
+            padding: 0 15px;
             margin: 0 auto;
             display: flex;
             font-size: @subtitle;
@@ -34,7 +47,7 @@ section.sponsor-archive{
             font-family: @title-font;
           }
           span.description{
-            width: 80%;
+            padding: 0 15px;
             margin: 0 auto;
             display: flex;
             font-size: @paragraph;
@@ -43,7 +56,7 @@ section.sponsor-archive{
             font-family: @text-font;
           }
           span.address{
-            width: 80%;
+            padding: 0 15px;
             margin: 0 auto;
             display: flex;
             font-size: @paragraph;

@@ -14,8 +14,8 @@ $adress = get_field('adress', 'option');
             <span>Kontakt</span>
             <ul>
                 <li><a href="mailto:<?= $email ?>"><?= $email ?></a></li>
-                <li><a href="tel:<?= $tlf ?>"><?= $tlf ?></a></li>
                 <li><a href="http://maps.google.com/?q=<?=$adress?>"><?= $adress ?></a></li>
+                <li><a href="tel:<?= $tlf ?>"><?= $tlf ?></a></li>
             </ul>
 
         </div>

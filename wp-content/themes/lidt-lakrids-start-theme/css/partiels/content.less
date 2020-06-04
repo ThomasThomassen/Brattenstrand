@@ -31,6 +31,13 @@ section.content {
       span.title {
         font-size: @small-title;
       }
+      div.contactform{
+        form.wpcf7-form{
+          @media @screen-laptop{
+            flex-direction: column;
+          }
+        }
+      }
     }
 
     &.box {
@@ -87,6 +94,9 @@ section.content {
         max-width: 100%;
         height: auto;
       }
+      iframe{
+        width: 100%;
+      }
     }
   }
 
@@ -114,12 +124,18 @@ section.content {
     form.wpcf7-form {
       display: flex;
       flex-direction: row;
+      @media @screen-phablet{
+        flex-direction: column;
+      }
       div.wrapper {
         font-size: @paragraph;
         font-family: @title-font;
         position: relative;
         width: 100%;
         margin: 0 15px;
+        @media @screen-phablet{
+          margin: 0;
+        }
 
         span.wpcf7-form-control-wrap {
           position: relative;

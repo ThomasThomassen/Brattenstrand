@@ -44,7 +44,6 @@ jQuery(document).ready(function () {
 
     window.onscroll = function () {
         var scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
-
         for (i in navPoints) {
             if (navPoints[i] < scrollPosition - (500) && window.innerWidth > 768 || navPoints[i] < scrollPosition - (1000) && window.innerWidth < 768) {
                 $('ul').find('.active').removeClass('active');

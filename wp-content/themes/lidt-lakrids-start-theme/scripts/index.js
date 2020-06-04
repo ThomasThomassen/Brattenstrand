@@ -31,7 +31,6 @@ function navWidth() {
     var nav = document.getElementById('navigation');
     var list = document.getElementsByClassName('navlist');
     var i;
-    console.log(list);
     for (i = 0; list.length > i; i++) {
         if (nav.children.length === 1) {
             list[i].classList.add('one');

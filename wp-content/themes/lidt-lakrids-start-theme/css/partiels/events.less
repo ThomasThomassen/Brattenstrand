@@ -4,26 +4,56 @@ div.tribe-common {
     header.tribe-events-header {
       flex-direction: column;
       padding: 0 24px;
+      @media (max-width: 800px){
+        flex-wrap: nowrap;
+        margin: 0 0 32px 0;
+      }
 
       div.tribe-events-header__events-bar {
         width: 79%;
         margin-right: 1%;
         border: none;
         height: 50px;
+        @media (max-width: 800px){
+          width: 100%;
+          margin-right: 0;
+          margin-bottom: 0;
+        }
 
         div.tribe-events-c-events-bar__search-filters-container{
           height: 100%;
+          align-items: center;
+          display: flex;
+          flex: auto;
+          padding: 0;
+          position: static;
+          z-index: auto;
           div.tribe-events-c-events-bar__search{
             height: 100%;
+            display: flex;
+            flex: auto;
             form.tribe-events-c-search{
               height: 100%;
+              display: flex;
+              align-items: center;
               div.tribe-events-c-search__input-group{
                 height: 100%;
-                input.tribe-common-form-control-text__input{
-                  padding: 16px 20px 16px 40px;
-                  border: 1px solid @blue-color;
-                  line-height: initial;
-                  height: 100%;
+                align-items: center;
+                display: flex;
+                flex: auto;
+                div.tribe-events-c-search__input-control--keyword{
+                  flex: auto;
+                  margin: 12px 0;
+                  border-right: 0;
+                  input.tribe-common-form-control-text__input{
+                    padding: 16px 20px 16px 40px;
+                    border: 1px solid @blue-color;
+                    line-height: initial;
+                    height: 100%;
+                    background-position: 16px;
+                    background-size: 16px;
+                    font-size: 14px;
+                  }
                 }
               }
               button{
@@ -36,6 +66,10 @@ div.tribe-common {
                 font-size: @subtitle;
                 font-weight: 600;
                 line-height: 1;
+                flex: none;
+                margin-top: 0;
+                width: auto;
+
                   &:hover{
                     background-color: @green-color;
                   }
@@ -50,6 +84,9 @@ div.tribe-common {
         border: 1px solid @blue-color;
         margin-bottom: 35px;
         flex: initial;
+        @media (max-width: 800px){
+          width: 100%;
+        }
 
         div.tribe-events-c-top-bar__datepicker {
           flex: initial;
@@ -57,6 +94,7 @@ div.tribe-common {
           width: 100%;
           display: flex;
           justify-content: center;
+
 
           button {
             width: 100%;
@@ -74,6 +112,7 @@ div.tribe-common {
               margin-left: 10px;
               color: @blue-color;
               font-weight: 600;
+              display: block !important;
             }
           }
         }
@@ -91,6 +130,15 @@ div.tribe-events-calendar-list {
   div.tribe-common-g-row {
     margin: 0 0 50px !important;
     flex-basis: 33.33%;
+    @media @screen-laptop{
+      flex-basis: 50%;
+    }
+    @media @screen-phablet{
+      flex-basis: 100%;
+    }
+    div.tribe-common-g-col{
+      padding: 0 15px !important;
+    }
     div.tribe-events-calendar-list__event-wrapper {
       padding: 0 25px;
       article.tribe-events-calendar-list__event {
@@ -166,3 +214,11 @@ div.tribe-events-calendar-list {
     }
   }
 }
+div.datepicker.dropdown-menu{
+  left: -150px !important;
+  @media (max-width: 800px){
+    left: 0 !important;
+  }
+}
+
+

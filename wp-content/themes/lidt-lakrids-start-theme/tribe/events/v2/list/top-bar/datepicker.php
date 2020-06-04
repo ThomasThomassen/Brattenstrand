@@ -34,30 +34,11 @@
 		aria-label="<?php esc_attr_e( 'Click to toggle datepicker', 'the-events-calendar' ); ?>"
 		title="<?php esc_attr_e( 'Click to toggle datepicker', 'the-events-calendar' ); ?>"
 	>
-		<time
-			datetime="<?php echo esc_attr( $selected_start_datetime ); ?>"
-			class="tribe-events-c-top-bar__datepicker-time"
-		>
-			<?php if ( $show_now ) : ?>
-				<span class="tribe-events-c-top-bar__datepicker-desktop tribe-common-a11y-hidden">
+		<time class="tribe-events-c-top-bar__datepicker-time">
+				<span>
                     DATO
 				</span>
-			<?php endif; ?>
 		</time>
-		<?php if ( $show_end ) : ?>
-			<span class="tribe-events-c-top-bar__datepicker-separator"> - </span>
-			<time
-				datetime="<?php echo esc_attr( $selected_end_datetime ); ?>"
-				class="tribe-events-c-top-bar__datepicker-time"
-			>
-				<span class="tribe-events-c-top-bar__datepicker-mobile">
-					<?php echo esc_html( $selected_end_date_mobile ); ?>
-				</span>
-				<span class="tribe-events-c-top-bar__datepicker-desktop tribe-common-a11y-hidden">
-					<?php echo esc_html( $selected_end_date_label ); ?>
-				</span>
-			</time>
-		<?php endif; ?>
 	</button>
 	<label
 		class="tribe-events-c-top-bar__datepicker-label tribe-common-a11y-visual-hide"

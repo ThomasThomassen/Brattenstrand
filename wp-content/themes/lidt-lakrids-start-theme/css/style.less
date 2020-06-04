@@ -98,6 +98,9 @@ body:not(.wp-admin), .acf-block-preview {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  @media @screen-laptop{
+    flex-direction: column;
+  }
 }
 .txt-to-img{
   display: flex;
@@ -109,6 +112,11 @@ body:not(.wp-admin), .acf-block-preview {
   justify-content: center;
 }
 
+#wpadminbar{
+  top: initial;
+  bottom: 0;
+  position: fixed;
+}
 
 @import "partiels/content";
 @import "partiels/banner";
